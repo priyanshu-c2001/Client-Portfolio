@@ -7,7 +7,7 @@ const VideoTagline = () => {
 
     return (
         <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-            <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
                 {/* NOTE: You are currently using a file path that ends in '.jpg' for the video source. 
            If this is a video component, ensure the file at this path is an actual video file (e.g., .mp4). 
            If it's an image, consider replacing the <video> tag with an <img> tag for best performance. */}
