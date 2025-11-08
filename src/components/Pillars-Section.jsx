@@ -23,7 +23,7 @@ const pillars = [
     },
 ];
 
-export default function PillarsSection() {
+const PillarsSection = () =>{
     const [hoveredPillar, setHoveredPillar] = useState(null);
 
     // This logic was already correct! It uses the state to find the
@@ -52,7 +52,7 @@ export default function PillarsSection() {
                                         className="cursor-pointer group p-4 -m-4 rounded-lg transition-all duration-300 "
                                         onMouseEnter={() => setHoveredPillar(pillar.id)} // <-- ADD THIS
                                         onMouseLeave={() => setHoveredPillar(null)}
-                                        _                          >
+                                        >
                                         <div className="flex items-center justify-between">
                                             <div>
                                                 <h3
@@ -60,7 +60,7 @@ export default function PillarsSection() {
                                                         // v-- UPDATED CLASS
                                                         active ? "text-gray-500" : "text-black"
                                                         }`}
-                                                    _                 >
+                                                    >
                                                     {pillar.title}
                                                 </h3>
 
@@ -112,3 +112,5 @@ export default function PillarsSection() {
         </section>
     );
 }
+
+export default PillarsSection;
