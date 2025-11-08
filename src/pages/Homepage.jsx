@@ -5,6 +5,10 @@ import VideoTagline from "../components/VideoTagline";
 import ResultsSection from "../components/ResultsSection";
 import HeroBentoSection from "../components/HeroBentoSection";
 import Reviews from "../components/Reviews";
+import PillarsSection from "../components/pillars-section";
+import EventSlider from "../components/EventSlider";
+import Footer from "../components/Footer";
+import FooterCTA from "../components/FooterCTA";
 
 const Homepage = () => {
   return (
@@ -16,6 +20,10 @@ const Homepage = () => {
      <ResultsSection />
      <HeroBentoSection />
      <Reviews />
+     <PillarsSection />
+     <EventSlider />
+     <FooterCTA />
+     <Footer />
     </div>
   );
 };
