@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const VideoTagline = () => {
     const [isHovering, setIsHovering] = useState(false)
@@ -33,7 +34,7 @@ const VideoTagline = () => {
                     className={`px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold text-lg transition-colors duration-300 ${isHovering ? "bg-gray-300 text-black" : "bg-white text-black hover:bg-gray-300"
                         }`}
                 >
-                    Enroll now
+                    <Link to="/contact">Enroll now</Link>
                 </button>
             </div>
         </section>

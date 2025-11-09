@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FooterCTA = () => {
     return (
         <section
@@ -20,7 +22,7 @@ const FooterCTA = () => {
                 </p>
 
                 <button className="px-8 md:px-10 py-3 md:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-colors duration-300">
-                    Enroll Now
+                    <Link to="/contact">Enroll Now</Link>
                 </button>
             </div>
         </section>

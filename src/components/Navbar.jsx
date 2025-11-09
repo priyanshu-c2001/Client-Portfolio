@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Menu, X, Search } from "lucide-react" // Import Search icon
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg"
 // Note: Changed 'next/link' to a standard 'a' tag for a pure JS conversion,
 // but in a Next.js project, you should use 'next/link'.
@@ -15,7 +16,7 @@ const Navbar = () => {
         { label: "Home", href: "/" },
         { label: "About", href: "/about" },
         { label: "Services", href: "/services" },
-        { label: "Contact", href: "/contact" },
+        { label: "Contact Us", href: "/contact" },
     ]
 
     // Function to toggle the search bar
@@ -68,15 +69,15 @@ const Navbar = () => {
                     {/* Desktop Nav Items (Simplified with Hover Effect) */}
                     <div className="hidden md:flex items-center gap-16"> {/* Reduced gap for space */}
                         {navItems.map((item) => (
-                            <a
+                            <Link
                                 key={item.label}
-                                href={item.href}
+                                to={item.href}
                                 className="relative text-sm font-medium hover:text-white/80 transition-colors py-2 group"
                             >
                                 {item.label}
                                 {/* White line with smooth increase effect */}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full"></span>
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
@@ -89,7 +90,7 @@ const Navbar = () => {
                             Log In
                         </a>
                         <button className="bg-white text-black px-6 py-2 rounded-full font-medium text-sm hover:bg-white/90 transition-colors">
-                            Enroll now
+                            <Link to="/contact">Enroll now</Link>
                         </button>
                     </div>
 

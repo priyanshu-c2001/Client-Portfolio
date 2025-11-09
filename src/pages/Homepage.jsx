@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import EventsCarousel from "../components/EventsCarousel";
 import VideoTagline from "../components/VideoTagline";
@@ -7,13 +6,10 @@ import HeroBentoSection from "../components/HeroBentoSection";
 import Reviews from "../components/Reviews";
 import PillarsSection from "../components/Pillars-Section";
 import EventSlider from "../components/EventSlider";
-import Footer from "../components/Footer";
-import FooterCTA from "../components/FooterCTA";
 
 const Homepage = () => {
   return (
     <div>
-     <Navbar />
      <Hero />
      <EventsCarousel />
      <VideoTagline />
@@ -22,8 +18,6 @@ const Homepage = () => {
      <Reviews />
      <PillarsSection />
      <EventSlider />
-     <FooterCTA />
-     <Footer />
     </div>
   );
 };

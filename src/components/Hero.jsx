@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
     const [isVideoReady, setIsVideoReady] = useState(false)
@@ -30,7 +31,7 @@ const Hero = () => {
                         </h1>
                         <div className="flex justify-center md:justify-start">
                             <button className="bg-white text-black px-8 py-3 rounded-full font-semibold text-sm md:text-lg hover:bg-white/90 transition-colors">
-                                Enroll now
+                                <Link to="/contact">Enroll now</Link>
                             </button>
                         </div>
                     </div>

@@ -1,10 +1,9 @@
-import { Facebook, Twitter, Dribbble, Instagram } from "lucide-react"
+import { Facebook, Twitter, Instagram } from "lucide-react"
 
 const Footer = () => {
     const socialLinks = [
         { icon: Facebook, href: "#", label: "Facebook" },
         { icon: Twitter, href: "#", label: "Twitter" },
-        { icon: Dribbble, href: "#", label: "Dribbble" },
         { icon: Instagram, href: "#", label: "Instagram" },
     ]
 
@@ -26,9 +25,9 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">Address</h4>
                         <div className="space-y-2 text-gray-300">
-                            <p className="text-sm md:text-base">Germany —</p>
-                            <p className="text-sm md:text-base">785 15h Street, Office 478</p>
-                            <p className="text-sm md:text-base">Berlin, De 81566</p>
+                            <p className="text-sm md:text-base">Skill Orchid Education —</p>
+                            <p className="text-sm md:text-base">SCF-61, 2nd floor, phase 3b2</p>
+                            <p className="text-sm md:text-base">Mohali- 160059 (Pb) INDIA</p>
                         </div>
                     </div>
 
