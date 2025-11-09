@@ -3,6 +3,7 @@ import Body from "./components/Body";
 import Homepage from "./pages/Homepage"
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollToTop";
 
 const App=()=>{
@@ -15,6 +16,7 @@ const App=()=>{
             <Route path="/" element={<Homepage />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
           </Route>
         </Routes>
       </BrowserRouter>
