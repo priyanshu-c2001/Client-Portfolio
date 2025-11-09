@@ -100,7 +100,8 @@ const Navbar = () => {
                             <Search size={24} /> {/* Increased Search icon size */}
                         </button>
                         <button className="bg-white text-black px-5 py-2 rounded-full font-medium text-sm hover:bg-white/90 transition-colors">
-                            Enroll now {/* Increased Start now button size (px-5 py-2, text-sm) */}
+                            <Link to="/contact">Enroll now</Link>
+                            {/* Increased Start now button size (px-5 py-2, text-sm) */}
                         </button>
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -115,14 +116,14 @@ const Navbar = () => {
                 {mobileMenuOpen && (
                     <div className="md:hidden bg-black border-t border-white/10 py-4 px-4">
                         {navItems.map((item) => (
-                            <a
+                            <Link
                                 key={item.label}
-                                href={item.href}
+                                to={item.href}
                                 onClick={closeMobileMenu} // Close menu on click
                                 className="block text-white text-base font-medium py-3 hover:text-white/80 transition-colors" // Increased text size and padding
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         ))}
                         <a
                             href="#"
