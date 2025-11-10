@@ -22,7 +22,7 @@ const VideoTagline = () => {
                 <img
                     src={transparent_logo}
                     alt="Logo"
-                    className="max-h-72 md:max-h-72 object-contain drop-shadow-lg mb-48"
+                    className="max-h-72 md:max-h-72 object-contain drop-shadow-lg mb-56"
                 />
             </div>
 
