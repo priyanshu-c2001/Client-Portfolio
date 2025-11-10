@@ -1,15 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react" // <-- 1. Import useEffect
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import EventCard from "./EventCard" // Assuming EventCard.js is in the same folder
+import { Link } from "react-router-dom"
 
 const events = [
     {
         id: 1,
         title: "",
-        description:
-            "",
+        description: "",
         label: "",
         date: "",
         place: "",
@@ -23,8 +23,7 @@ const events = [
     {
         id: 2,
         title: "",
-        description:
-            "",
+        description: "",
         label: "",
         date: "",
         place: "",
@@ -38,8 +37,7 @@ const events = [
     {
         id: 3,
         title: "",
-        description:
-            "",
+        description: "",
         label: "",
         date: "",
         place: "",
@@ -63,6 +61,21 @@ export default function EventSlider() {
         setCurrentSlide((prev) => (prev - 1 + events.length) % events.length)
     }
 
+    // --- FIX_IS_HERE ---
+    // 2. Add useEffect to handle the automatic sliding
+    useEffect(() => {
+        // Set up an interval to call nextSlide every 3 seconds (3000 ms)
+        const timer = setInterval(() => {
+            nextSlide()
+        }, 3000)
+
+        // Clear the interval when the component unmounts
+        // This prevents memory leaks
+        return () => {
+            clearInterval(timer)
+        }
+    }, []) // The empty dependency array [] means this effect runs only once when the component mounts
+
     return (
         <div className="w-full">
             {/* Header Section */}
@@ -79,12 +92,12 @@ export default function EventSlider() {
                 <div className="mb-6 flex flex-col gap-4 md:mb-8 md:flex-row md:items-center md:justify-between">
                     <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-2">
                         <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Events</h2>
-                        <a
-                            href="#"
+                        <Link
+                            to="/services"
                             className="text-xs text-foreground/60 hover:text-foreground transition-colors md:ml-4 md:text-sm"
                         >
                             Explore all events <span className="ml-1">›</span>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Navigation Arrows */}
@@ -100,7 +113,7 @@ export default function EventSlider() {
                             onClick={nextSlide}
                             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                             aria-label="Next slide"
-                            _>
+                        >
                             <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
                         </button>
                     </div>
@@ -120,7 +133,6 @@ export default function EventSlider() {
                     </div>
                 </div>
 
-                {/* --- FIX_IS_HERE --- */}
                 {/* Slider Dots */}
                 <div className="mt-6 flex justify-center gap-2 md:mt-8">
                     {events.map((_, index) => (

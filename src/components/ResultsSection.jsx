@@ -1,5 +1,5 @@
 "use client"
-
+import { Link } from "react-router-dom"
 const ResultsSection = ({
     heading = "Empowering Futures Through Education Excellence",
     description = "Ritesh Bammi, an award-winning consultant, brings over 21 years of diverse experience in training and development across India, Africa, and the UAE, transforming lives through skill enhancement and professional growth.",
@@ -50,9 +50,9 @@ const ResultsSection = ({
                 </div>
 
                 {/* CTA Button */}
-                <button className="px-8 py-3 bg-white text-black rounded-full font-medium shadow-lg hover:bg-gray-100 transition-colors w-fit text-sm">
+                <Link to="/about" className="px-8 py-3 bg-white text-black rounded-full font-medium shadow-lg hover:bg-gray-100 transition-colors w-fit text-sm">
                     {ctaText}
-                </button>
+                </Link>
             </div>
 
             {/* Left Side - Image Area (Appears second on mobile) */}

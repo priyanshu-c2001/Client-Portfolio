@@ -63,7 +63,9 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
                     {/* Logo */}
                     <div className="text-lg md:text-2xl pt-2 font-bold tracking-wide">
-                        <img src={logo} alt="Logo" className="max-h-16 max-w-sm" />
+                        <Link to="/">
+                            <img src={logo} alt="Logo" className="max-h-16 max-w-sm" />
+                        </Link>
                     </div>
 
                     {/* Desktop Nav Items (Simplified with Hover Effect) */}
@@ -86,9 +88,6 @@ const Navbar = () => {
                         <button onClick={toggleSearchBar} className="text-white hover:text-white/80 transition-colors">
                             <Search size={20} /> {/* Used Search icon from lucide-react */}
                         </button>
-                        <a href="#" className="text-sm font-medium hover:text-white/80 transition-colors">
-                            Log In
-                        </a>
                         <button className="bg-white text-black px-6 py-2 rounded-full font-medium text-sm hover:bg-white/90 transition-colors">
                             <Link to="/contact">Enroll now</Link>
                         </button>
@@ -125,13 +124,6 @@ const Navbar = () => {
                                 {item.label}
                             </Link>
                         ))}
-                        <a
-                            href="#"
-                            onClick={closeMobileMenu}
-                            className="block text-white text-base font-medium py-3 hover:text-white/80 transition-colors"
-                        >
-                            Log In
-                        </a>
                     </div>
                 )}
             </nav>

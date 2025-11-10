@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react"
 import { Play } from "lucide-react"
+import { Link } from "react-router-dom"
 
 // Removed interface VideoSectionProps
 
@@ -70,9 +71,9 @@ const HeroBentoSection=({
               <div className="flex flex-col gap-4 md:gap-8 p-4 md:p-12 bg-white rounded-2xl md:rounded-3xl relative z-20">
                 <h2 className="text-2xl md:text-5xl font-bold leading-tight">{heading}</h2>
                 <p className="text-sm md:text-lg leading-relaxed text-gray-700">{description}</p>
-                <button className="px-6 md:px-8 py-2 md:py-3 bg-gray-100 text-black rounded-full font-medium hover:bg-gray-200 transition-colors w-fit text-sm md:text-base">
+                <Link to="/contact"className="px-6 md:px-8 py-2 md:py-3 bg-gray-100 text-black rounded-full font-medium hover:bg-gray-200 transition-colors w-fit text-sm md:text-base">
                   {buttonText}
-                </button>
+                </Link>
               </div>
 
               {/* Video Section */}

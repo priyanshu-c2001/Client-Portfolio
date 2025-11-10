@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const events = [
     {
@@ -68,9 +69,9 @@ const EventsCarousel = () => {
                 <div className="flex items-center justify-between mb-12">
                     <div className="flex items-center gap-3">
                         <h2 className="text-4xl font-bold text-white">Events that liberate</h2>
-                        <a href="#" className="text-white/70 hover:text-white transition-colors flex items-center gap-1 text-lg">
+                        <Link to="/services" className="text-white/70 hover:text-white transition-colors flex items-center gap-1 text-lg">
                             Discover events <span>›</span>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Navigation Arrows */}

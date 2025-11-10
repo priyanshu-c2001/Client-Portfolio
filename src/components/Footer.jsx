@@ -1,13 +1,20 @@
-import { Facebook, Twitter, Instagram } from "lucide-react"
+import { Facebook, MessageSquare, Instagram } from "lucide-react" // Changed Whatsapp to MessageSquare
+import { Link, useLocation } from "react-router-dom"
 
 const Footer = () => {
+    const location = useLocation();
     const socialLinks = [
         { icon: Facebook, href: "#", label: "Facebook" },
-        { icon: Twitter, href: "#", label: "Twitter" },
-        { icon: Instagram, href: "#", label: "Instagram" },
+        { icon: MessageSquare, href: "#", label: "WhatsApp" }, // Use MessageSquare here
+        { icon: Instagram, href: "https://www.instagram.com/ritesh_bammi?igsh=MXNwenF3MXQ0Ymtibg==", label: "Instagram" },
     ]
 
-    const navLinks = ["Home", "About Us", "Services", "Contacts"]
+    const navLinks = [
+        { label: "Home", href: "/" },
+        { label: "About Us", href: "/about" },
+        { label: "Services", href: "/services" },
+        { label: "Contact Us", href: "/contact" },
+    ]
 
     return (
         <footer className="bg-black text-white">
@@ -68,16 +75,20 @@ const Footer = () => {
                     {/* Navigation links */}
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-6">
                         <nav className="flex flex-wrap gap-6 md:gap-8">
-                            {navLinks.map((link, index) => (
-                                <a
-                                    key={index}
-                                    href="#"
-                                    className={`text-gray-300 hover:text-white transition-colors text-sm md:text-base ${link === "Home" ? "border-b-2 border-white" : ""
-                                        }`}
-                                >
-                                    {link}
-                                </a>
-                            ))}
+                            {navLinks.map((link, index) => {
+                                const isActive = location.pathname === link.href;
+
+                                return (
+                                    <Link
+                                        key={index}
+                                        to={link.href}
+                                        className={`text-gray-300 hover:text-white transition-colors text-sm md:text-base 
+                            ${isActive ? "border-b-2 border-white" : "border-b-2 border-transparent"}`}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                );
+                            })}
                         </nav>
 
                         {/* Copyright */}
