@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 const HeroBentoSection=({
   imageUrl = "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=941,fit=crop/mnlJ8BlwqNFWage7/bw-ritesh-YX4xERE6k9S0K1y0.jpg",
   videoUrl = "https://www.youtube.com/embed/9dHDa4zbXCE",
-  heading = "Empowering Through Education and Training?",
+  heading = "Empowering through education and training?",
   description = "For over 15 years UP! Ritesh Bammi has helped companies and individuals build a culture of uplifting service that delivers real business results year after year nationally and internationally. For Training and Consulting interactions, he is a visiting faculty to various Institutes and corporate globally.",
   buttonText = "Meet Ritesh Bammi",
   featuredLogos = ["Corporate", "Workshops", "Inc.", "Success"],

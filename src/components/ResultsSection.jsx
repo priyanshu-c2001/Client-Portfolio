@@ -1,7 +1,7 @@
 "use client"
 import { Link } from "react-router-dom"
 const ResultsSection = ({
-    heading = "Empowering Futures Through Education Excellence",
+    heading = "Empowering futures through education excellence",
     description = "Ritesh Bammi, an award-winning consultant, brings over 21 years of diverse experience in training and development across India, Africa, and the UAE, transforming lives through skill enhancement and professional growth.",
     stat1Value = "700+",
     stat1Label = "Institutions",

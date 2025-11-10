@@ -30,7 +30,7 @@ const VideoTagline = () => {
 
                 {/* Headline */}
                 <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-white mb-6 md:mb-8 max-w-4xl leading-tight">
-                    Because no machine can think, feel or create like YOU
+                    Because no machine can think, feel or create like you!
                 </h1>
 
                 {/* Subtitle */}

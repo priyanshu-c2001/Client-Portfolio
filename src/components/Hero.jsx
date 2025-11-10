@@ -27,7 +27,7 @@ const Hero = () => {
                     {/* Left Content */}
                     <div className="flex-1 max-w-2xl w-full">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-tight mb-6 md:mb-8 text-balance text-center md:text-left">
-                            "Unleashing the power of human intelligence in an AI-driven world"
+                            "Unleashing the power of human Intelligence in an AI-driven world"
                         </h1>
                         <div className="flex justify-center md:justify-start">
                             <button className="bg-white text-black px-8 py-3 rounded-full font-semibold text-sm md:text-lg hover:bg-white/90 transition-colors">
