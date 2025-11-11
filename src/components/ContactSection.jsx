@@ -23,7 +23,7 @@ const ContactSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);
-        formData.append("access_key", "e00437fa-5ed5-4a27-9c27-c99dae9024db");
+        formData.append("access_key", "6a161b7f-a1ff-4b83-a157-f7f72d148e54");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
