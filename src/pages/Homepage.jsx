@@ -6,6 +6,7 @@ import HeroBentoSection from "../components/HeroBentoSection";
 import Reviews from "../components/Reviews";
 import PillarsSection from "../components/Pillars-Section";
 import EventSlider from "../components/EventSlider";
+import ScrollTopArrow from "../components/ScrollTopArrow";
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
      <Reviews />
      <PillarsSection />
      <EventSlider />
+     <ScrollTopArrow />
     </div>
   );
 };

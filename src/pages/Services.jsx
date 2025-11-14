@@ -1,6 +1,7 @@
 import ClientsTestimonials from "../components/ClientsTestimonials";
 import ServicesHeader from "../components/ServicesHeader";
 import WhatWeDo from "../components/WhatWeDo";
+import ScrollTopArrow from "../components/ScrollTopArrow";
 
 const Services = () => {
   return (
@@ -8,6 +9,7 @@ const Services = () => {
       <ServicesHeader />
       <WhatWeDo />
       <ClientsTestimonials />
+      <ScrollTopArrow />
     </div>
   )
 }
