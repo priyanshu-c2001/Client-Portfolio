@@ -25,6 +25,30 @@ const services = [
         description:
             "Empowering parents with evidence-based strategies to nurture resilient, emotionally intelligent children..",
     },
+    {
+        id: "04",
+        title: "Soft Skills",
+        description:
+            "Expressing ideas with impact – Training designed to help participants communicate clearly and deliver ideas with confidence.",
+    },
+    {
+        id: "05",
+        title: "Customer Service",
+        description:
+            "First impressions in service – Training that helps create positive, professional first interactions with customers.",
+    },
+    {
+        id: "06",
+        title: "Logistics Behavioral",
+        description:
+            "Workplace discipline & punctuality – Training that improves punctuality, consistency, and floor discipline.",
+    },
+    {
+        id: "07",
+        title: "Sales Growth",
+        description:
+            "Understanding client psychology – Training that explains customer behavior to improve sales conversations.",
+    },
 ]
 
 const WhatWeDo=()=>{

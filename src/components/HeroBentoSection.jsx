@@ -12,7 +12,7 @@ const HeroBentoSection=({
   heading = "Empowering through education and training?",
   description = "For over 15 years UP! Ritesh Bammi has helped companies and individuals build a culture of uplifting service that delivers real business results year after year nationally and internationally. For Training and Consulting interactions, he is a visiting faculty to various Institutes and corporate globally.",
   buttonText = "Meet Ritesh Bammi",
-  featuredLogos = ["Corporate", "Workshops", "Inc.", "Success"],
+  featuredLogos = ["25+ Years of Expertise", "21+ Presence in Countries"],
 })=> {
   const [isPlaying, setIsPlaying] = useState(false)
   const iframeRef = useRef(null) // Removed type annotation <HTMLIFrameElement>
@@ -54,7 +54,7 @@ const HeroBentoSection=({
 
               {/* Bottom: Featured In Section */}
               <div className="flex flex-col gap-4 md:gap-6 p-4 md:p-8 bg-white rounded-2xl md:rounded-3xl mt-4 md:mt-8">
-                <p className="text-gray-600 text-xs md:text-sm font-medium">Featured in:</p>
+                <p className="text-gray-600 text-xs md:text-sm font-medium">Known for:</p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 items-center">
                   {featuredLogos.map((logo, index) => (
                     <div key={index} className="text-gray-400 text-sm md:text-lg font-bold">
