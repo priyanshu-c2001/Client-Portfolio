@@ -14,7 +14,7 @@ const testimonials = [
             "Focused on enhancing employability through practical skills, workplace readiness, and attitude development.",
         name: "",
         title: "",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=562,fit=crop/mnlJ8BlwqNFWage7/clp-YZ9jB1BwzoIP3RPl.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366088/PHOTO-2025-11-15-09-25-33_fphgo5.jpg",
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const testimonials = [
             "Customized coaching sessions for individual and organizational growth.",
         name: "",
         title: "",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=562,fit=crop/mnlJ8BlwqNFWage7/pci-YbNJ7E7pW0cnb0op.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366087/PHOTO-2025-11-15-09-25-17_dqzh4o.jpg",
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const testimonials = [
             "Workplace-focused language development offered at inhouse or client locations for maximum flexibility and impact.",
         name: "",
         title: "",
-        image: "https://images.unsplash.com/photo-1507131679781-70be42a343e7?auto=format&fit=crop&w=656&h=480",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366088/WhatsApp_Image_2025-11-16_at_11.08.17_AM_eepmap.jpg",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const testimonials = [
             "Personal development workshops aimed at refining soft skills, image, and interpersonal effectiveness.",
         name: "",
         title: "",
-        image: "https://images.unsplash.com/photo-1689206110575-d222e62512b8?auto=format&fit=crop&w=656&h=480",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366087/PHOTO-2025-11-15-09-25-31_hvkor7.jpg",
     },
 ]
 

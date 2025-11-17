@@ -32,7 +32,7 @@ const events = [
             instructor: "RITESH BAMMI",
             eventName: "",
         },
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=750,fit=crop/mnlJ8BlwqNFWage7/commerece-dept~-4157-YZ9jZNx4nPhpEy10.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366088/PHOTO-2025-11-15-09-25-23_nc8ruj.jpg",
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ const events = [
             instructor: "RITESH BAMMI",
             eventName: "",
         },
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=750,fit=crop/mnlJ8BlwqNFWage7/whatsapp-image-2025-07-21-at-00.54.08_cfbc618b-dJob2RnnoXunEBv3.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366087/PHOTO-2025-11-15-09-25-32_kitae1.jpg",
     },
 ]
 

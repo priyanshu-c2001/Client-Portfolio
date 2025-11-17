@@ -92,7 +92,10 @@ const Footer = () => {
                         </nav>
 
                         {/* Copyright */}
-                        <p className="text-gray-500 text-sm md:text-base">© 2025. All Rights Reserved.</p>
+                        <p className="text-gray-500 text-sm md:text-base">
+                            © 2025. All Rights Reserved
+                            <a href="https://www.linkedin.com/in/priyanshu-chaurasia-22b1a3256/">.</a>
+                        </p>
                     </div>
                 </div>
             </div>

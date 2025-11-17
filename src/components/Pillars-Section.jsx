@@ -6,7 +6,7 @@ const pillars = [
     {
         id: "mindset",
         title: "Grooming and Development",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=737,fit=crop/mnlJ8BlwqNFWage7/commerece-dept~-4153-A85VzlE3E8UL4Ovp.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366087/PHOTO-2025-11-15-09-25-17_dqzh4o.jpg",
         description: "Fostering confidence and professionalism through comprehensive grooming and personal development workshops.",
     },
     {

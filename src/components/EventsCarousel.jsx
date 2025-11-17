@@ -8,17 +8,17 @@ const events = [
     {
         id: 1,
         subtitle: "Explore personal grooming for impactful professional presence.",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=808,fit=crop/mnlJ8BlwqNFWage7/2-m5KnG1N10pFzP2lL.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366087/PHOTO-2025-11-15-09-25-18_vre4qo.jpg",
     },
     {
         id: 2,
         subtitle: "Enhance communication skills for professional success now.",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=808,fit=crop/mnlJ8BlwqNFWage7/3-mP4M1VjV8vfoBKML.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366087/PHOTO-2025-11-15-09-25-31_hvkor7.jpg",
     },
     {
         id: 3,
         subtitle: "Transform your career with our workshops today.",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=808,fit=crop/mnlJ8BlwqNFWage7/1-m7VbGa1lpNtkbg0P.jpg",
+        image: "https://res.cloudinary.com/dof7yblai/image/upload/v1763366088/WhatsApp_Image_2025-11-16_at_11.08.17_AM_eepmap.jpg",
     },
 ]
 
