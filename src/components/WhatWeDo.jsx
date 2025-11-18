@@ -1,10 +1,28 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ArrowUpRight } from "lucide-react"
+import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
 
-// The 'Service' interface has been removed as it's a TypeScript feature.
-// JavaScript will infer the types from the object array.
+// Convert description text into HTML with bullet formatting
+const formatDescription = (text) => {
+    let html = text
+        // Add <br/> for line breaks
+        .replace(/\n/g, "<br/>")
+
+        // Convert bullet points into UL > LI (indented)
+        .replace(
+            /(• .*?(<br\/>|$))/g,
+            "<ul class='pl-5 space-y-1 '><li>$1</li></ul>"
+        )
+
+        // Convert headings into bold text
+        .replace(
+            /(What This Training Covers:|Key Takeaways:|Future Benefits:|Who Benefits:|Age Group:)/g,
+            "<h4 class='font-semibold mt-6 mb-2'>$1</h4>"
+        );
+
+    return html;
+};
 
 const services = [
     {
@@ -258,9 +276,9 @@ Future Benefits:
     }
 ];
 
+
 const WhatWeDo = () => {
-    // Removed the <string | null> type annotation from useState
-    const [hoveredId, setHoveredId] = useState(null)
+    const [hoveredId, setHoveredId] = useState(null);
 
     return (
         <section className="w-full px-4 pt-12 sm:px-6 sm:py-16 lg:px-16 lg:py-20">
@@ -277,9 +295,9 @@ const WhatWeDo = () => {
             {/* Divider */}
             <div className="h-px bg-gray-200 mb-8 sm:mb-12 lg:mb-12"></div>
 
-            {/* Services List */}
+            {/* Services */}
             <div className="space-y-px">
-                {services.map((service, index) => (
+                {services.map((service) => (
                     <div
                         key={service.id}
                         onMouseEnter={() => setHoveredId(service.id)}
@@ -287,7 +305,8 @@ const WhatWeDo = () => {
                         className="group py-6 sm:py-8 lg:py-12 border-b border-gray-200 last:border-b-0 cursor-pointer transition-all duration-300"
                     >
                         <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-start lg:justify-between lg:gap-8 xl:gap-12">
-                            {/* Service ID */}
+
+                            {/* ID */}
                             <div className="flex-shrink-0 min-w-fit">
                                 <span
                                     className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold transition-colors duration-300 ${hoveredId === service.id ? "text-black" : "text-gray-300"
@@ -297,17 +316,22 @@ const WhatWeDo = () => {
                                 </span>
                             </div>
 
-                            {/* Service Title */}
+                            {/* Title */}
                             <div className="flex-shrink-0 min-w-fit">
-                                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-black">{service.title}</h3>
+                                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-black">
+                                    {service.title}
+                                </h3>
                             </div>
 
-                            {/* Service Description */}
+                            {/* Description (formatted) */}
                             <div className="flex-1 min-w-0">
-                                <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">{service.description}</p>
+                                <div
+                                    className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed whitespace-pre-wrap"
+                                    dangerouslySetInnerHTML={{ __html: formatDescription(service.description) }}
+                                />
                             </div>
 
-                            {/* Arrow Icon */}
+                            {/* Arrow */}
                             <div className="flex-shrink-0 mt-4 sm:mt-0">
                                 <div
                                     className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full border flex items-center justify-center transition-all duration-500 ${hoveredId === service.id ? "border-black" : "border-gray-400"
@@ -328,7 +352,7 @@ const WhatWeDo = () => {
                 ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default WhatWeDo;
