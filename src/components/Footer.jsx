@@ -1,11 +1,11 @@
-import { Facebook, MessageSquare, Instagram } from "lucide-react" // Changed Whatsapp to MessageSquare
+import { Linkedin, Youtube, Instagram } from "lucide-react" // Changed Whatsapp to MessageSquare
 import { Link, useLocation } from "react-router-dom"
 
 const Footer = () => {
     const location = useLocation();
     const socialLinks = [
-        { icon: Facebook, href: "#", label: "Facebook" },
-        { icon: MessageSquare, href: "#", label: "WhatsApp" }, // Use MessageSquare here
+        { icon: Linkedin, href: "https://www.linkedin.com/in/ritesh-bammi-23351356?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
+        { icon: Youtube, href: "https://youtube.com/@riteshbammi?si=FXZzFyw-9onYH5oW", label: "YouTube" }, // Use MessageSquare here
         { icon: Instagram, href: "https://www.instagram.com/ritesh_bammi?igsh=MXNwenF3MXQ0Ymtibg==", label: "Instagram" },
     ]
 
